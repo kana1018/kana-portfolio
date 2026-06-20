@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>断片</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
 </head>
+
 
 <body>
     <!-- 左側の固定されているところ -->
     <div class="fixed">
-        <h2>更新情報</h2>
+        <h2 class="category-title">更新情報</h2>
         <p class="subtitle">TimeLine</p>
 
         <ul class="timeline">
@@ -19,20 +22,23 @@
     </div>
     <!-- ここから右の動くところ -->
     <div id="scroll">
-        <div class="content type1">
+        <div class="content type1" id="title">
             <h1><img src="assets/img/logo.svg" id="logo" alt="断片"></h1>
         </div>
-        <div class="content type2">
-            <h2>私について</h2>
+        <div class="content type2" >
+            <h2 class="category-title">私について</h2>
             <p class="subtitle">ABOUT ME</p>
             <div id="kana-profile">
-                <h3>kana</h3>
                 <img src="assets/img/kanaicon.png" id="kana-icon" alt="kanaのアイコン">
-                <p>2004年生まれ。大学4年生。<br>
-                    Minecraftを中心に様々な企画を主催。<br>
-                    主に実況や配信を担当しています。<br>
-                    マイクラアスレをより大きなコンテンツにすることを野望に活動中
-                </p>
+                <div id="kana-description">
+                    <h3>kana</h3>
+                    <p>2004年生まれ。大学4年生。<br>
+                        Minecraftを中心に様々な企画を主催。<br>
+                        主に実況や配信を担当しています。<br>
+                        マイクラアスレをより大きなコンテンツにすることを野望に活動中
+                    </p>
+                </div>
+
             </div>
             <div id="kana-skill">
                 <h3>できること</h3>
@@ -45,7 +51,7 @@
             </div>
         </div>
         <div class="content type1">
-            <h2>制作物</h2>
+            <h2 class="category-title">制作物</h2>
             <p class="subtitle">PRODUCTS</p>
             <p>統合版Minecraftで作成したアドオンやデザインなど</p>
             <div class="card">
@@ -62,7 +68,33 @@
                 <p>統合版での荒らし対策として作成しました</p>
                 <p>シンプルなアドオンです</p>
             </div>
-
+            <div class="card">
+                <span>Minecraft</span><span>JavaScript</span><span>Figma</span>
+                <img src="ここに画像とか3">
+                <h3>配信オーバーレイ</h3>
+                <p>統合版Minecraft企画を配信する際に使用したもの。</p>
+                <p>Figmaを用いてデザインしています。</p>
+            </div>
+        </div>
+        <div class="content type2">
+            <h2 class="category-title">実況</h2>
+            <p class="subtitle">Live commentary</p>
+            <p>マイクラアスレチックを主に実況しています。<br>
+                緊迫感を感じられるような実況を目指しています。<br>
+                圧倒的な熱量とドラマ性が特徴的。
+            </p>
+            <div class="card">
+                <span>Minecraft</span><span>主催</span>
+                <img src="ここに画像とか4">
+                <h3>KANAKE</h3>
+                <p>100人以上が参加した統合版Minecraft最大規模のアスレチック企画</p>
+            </div>
+        </div>
+        <div class="content type1">
+            <h2 class="category-title">もっと知る</h2>
+            <p class="subtitle">more</p>
+            <p>ご連絡はXのDMもしくは、Discordにて</p>
+            <img src="ここにバナー的な奴">
         </div>
     </div>
 </body>
